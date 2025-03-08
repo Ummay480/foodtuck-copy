@@ -48,7 +48,10 @@ export default function OrdersDashboard() {
 
   return (
     <div className="container mx-auto p-4">
-      <div className="overflow-x-auto">
+       {/* ✅ Added Dashboard Navigation */}
+            <DashboardNav />  
+      
+      <div className="overflow-x-auto">       
         <table className="min-w-full bg-white border">
           <thead>
             <tr className="bg-gray-200 text-gray-700 text-sm md:text-base">
