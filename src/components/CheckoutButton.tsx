@@ -1,3 +1,4 @@
+"use client"
 import { loadStripe } from "@stripe/stripe-js";
 import { useSelector } from "react-redux";
 import { RootState } from "@/lib/redux/store";

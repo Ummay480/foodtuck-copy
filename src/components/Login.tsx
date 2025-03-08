@@ -1,3 +1,4 @@
+"use client"
 import { FC, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { login } from '@/lib/redux/slices/userSlice';

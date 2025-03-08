@@ -1,3 +1,4 @@
+"use client"
 async function handleSignUp(userId: string) {
     const res = await fetch("/api/auth/signup", {
       method: "POST",

@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import Image from "next/image"; // Import the Next.js Image component
 import Link from "next/link"; // Import the Next.js Link component

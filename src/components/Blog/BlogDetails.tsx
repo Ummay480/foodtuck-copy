@@ -1,3 +1,4 @@
+"use client"
 import { GetStaticProps } from 'next'; 
 import React from 'react';
 import Image from 'next/image';

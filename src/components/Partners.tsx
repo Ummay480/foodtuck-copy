@@ -1,4 +1,4 @@
-// components/Partners.tsx
+"use client"
 import Image from 'next/image';
 
 const Partners: React.FC = () => {
