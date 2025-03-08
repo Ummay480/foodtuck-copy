@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useDispatch } from "react-redux";
 import { addToCart } from "@/lib/redux/slices/cartSlice";
-import { FoodItem } from "@/types/cart";
+import { FoodItem } from "@/types/food";
 
 interface FoodCardProps extends Omit<FoodItem, "quantity" | "category" | "description" | "stock"> {
   id: string;
