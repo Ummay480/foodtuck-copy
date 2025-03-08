@@ -1,39 +1,46 @@
-"use client"
+"use client";
 import React from "react";
 import Image from "next/image";
 import { FaPlay } from "react-icons/fa";
 
 export default function CreativeProcess() {
   return (
-    <section className="relative h-screen bg-black text-white pt-10">
-      <div className="absolute inset-0">
+    <section className="relative h-[50vh] bg-black text-white pt-10 -mt-20 mb-32">
+      {/* Background Image */}
+      <div className="absolute inset-0 flex justify-center items-center my-10 mx-20">
         <Image
-          src="/images/image-99.png" // Ensure this path matches your file structure
+          src="/images/image-99.png"
           alt="Delicious Food Background"
-          width={1200} // Set a fixed width for the image
-          height={800} // Set a fixed height for the image
-          objectFit="cover" // Ensure the image covers the space without distorting
+          layout="fill" // Fills the section area
+          objectFit="cover" // Ensures image covers the space without distortion
           priority
+          className="object-cover"
+          style={{ objectPosition: "center" }} // Centers the image
         />
       </div>
-      <div className="relative z-10 flex flex-col items-end justify-center h-full text-end space-y-2 pr-8 ">
-        <h2 className="text-xl font-greatVibes text-center -mt-60 -ml-96 mr-44 text-orange-400">Restaurant Active Process</h2>
-        <h1 className="text-4xl font-semibold md:text-3xl -ml-40 mr-44">
-          <span className="text-orange-500">We</span> Document Every Food <br />
-          Bean Process until it is saved
-        </h1>
-        <p className="-ml-40 mr-44 mx-auto text-sm md:text-lg">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit.<br/> Quisque diam pellentesque bibendum non dui volutpat <br/>fringilla bibendum. 
-          Urna elit augue urna.
-        </p>
-        <div className="flex space-x-4">
-          <button className="px-6 py-2 -ml-40 mr-14 text-xs text-white rounded-full border-orange-400 border-2 md:text-base hover:bg-gray-200">
-            Read More
-          </button>
-          <button className="flex px-6 py-2 text-xs -ml-20 mr-40 font-semibold text-white md:text-base hover:text-orange-400">
-          <FaPlay className="bg-orange-400 rounded-full text-white p-3 -ml-20 text-4xl z-20" />
-            Play Video
-            </button>              
+
+      {/* Content (Text and Buttons) */}
+      <div className="relative z-10 transform -translate-y-10 mx-auto px-4 max-w-screen-lg h-full flex flex-col lg:flex-row justify-center lg:justify-end items-center lg:items-end text-center lg:text-left space-y-4 lg:space-y-0">
+        <div className="lg:w-1/2 text-center lg:text-left">
+          <h2 className="text-sm font-greatVibes text-[#FF9F0D] sm:text-lg md:text-xl lg:text-2xl">
+            Active Food Process
+          </h2>
+          <h1 className="text-sm font-semibold md:text-md lg:text-lg xl:text-xl px-2">
+            Documenting Every Step of the Bean Process
+          </h1>
+          <p className="text-xs sm:text-xsm md:text-sm lg:text-md mx-auto sm:max-w-lg lg:max-w-2xl p-2">
+            We document each step of the process to ensure quality.<br />
+            From start to finish, nothing is missed.
+          </p>
+          <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 justify-center lg:justify-start">
+            <button className="px-6 py-2 text-xs text-white rounded-full border-[#FF9F0D] border-2 md:text-sm hover:bg-gray-200">
+              Learn More
+            </button>
+            <button className="flex px-6 py-2 text-xs font-semibold text-white md:text-sm hover:text-[#FF9F0D]">
+              <FaPlay className="bg-[#FF9F0D] rounded-full text-white p-3 text-3xl z-20" />
+              Watch Video
+            </button>
+          </div>
         </div>
       </div>
     </section>

@@ -9,7 +9,7 @@ interface HeroBannerProps {
 
 const HeroBanner: React.FC<HeroBannerProps> = ({ title }) => (
   <section
-    className="relative h-[410px] flex items-center justify-center"
+    className="relative h-[350px] flex items-center justify-center"
     style={{
       backgroundImage: "url('/images/image-103.png')",
       backgroundSize: "cover",

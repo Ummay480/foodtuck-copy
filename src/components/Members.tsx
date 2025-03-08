@@ -12,10 +12,10 @@ const FoodMenu: React.FC = () => {
 
   return (
     <section className="py-20 bg-black text-center">
-      <h2 className="text-orange-400 font-greatVibes text-2xl leading-10 text-center ">
+      <h2 className="text-[#FF9F0D] font-greatVibes text-2xl leading-10 text-center ">
            Chef
           </h2>
-          <h3 className="text-2xl font-semibold text-orange-400 -ml-28 -mt-2 ">Me</h3>
+          <h3 className="text-2xl font-semibold text-[#FF9F0D] -ml-28 -mt-2 ">Me</h3>
           <h3 className="flex text-2xl font-semibold text-white justify-center items-center text-center ml-14 -mt-8">
  et Our Chef
 </h3>

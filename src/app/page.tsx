@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
     
-      <main>
+      <main className="px-20 overflow-x-hidden">
         <HeroSection />
         <AboutSection />
         <FoodMenu />

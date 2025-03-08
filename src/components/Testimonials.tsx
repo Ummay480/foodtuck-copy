@@ -5,11 +5,11 @@ import Image from "next/image";
 
 const Testimonials: React.FC = () => {
   return (
-    <section className="relative bg-black text-white py-12 pb-20">
-      <div className="container mx-auto px-4 text-center">
+    <section className="relative bg-black text-white py-12 pb-20 ">
+      <div className="container mx-auto px-4 text-center lt-20">
         {/* Section Title */}
-        <h2 className="text-orange-400 text-xl justify-start text-start font-greatVibes">Testimonials</h2>
-        <h3 className="text-3xl font-bold mt-2 justify-start text-start">What our clients are saying</h3>
+        <h2 className="text-[#FF9F0D] text-xl justify-start text-start font-greatVibes left-40">Testimonials</h2>
+        <h3 className="text-3xl font-bold mt-2 justify-start text-start left-40">What our clients are saying</h3>
 
         {/* Testimonial Card */}
         <div className="relative bg-white text-black mt-10 p-8 rounded-lg shadow-lg mx-auto max-w-3xl">
@@ -35,7 +35,7 @@ const Testimonials: React.FC = () => {
             />
 
             {/* Quote Icon */}
-            <div className="text-orange-400 text-4xl mt-4">“</div>
+            <div className="text-[#FF9F0D] text-4xl mt-4">“</div>
 
             {/* Testimonial Text */}
             <p className="text-gray-700 text-lg mt-4">
@@ -47,7 +47,7 @@ const Testimonials: React.FC = () => {
             {/* Star Ratings */}
             <div className="flex justify-center mt-4 space-x-1">
               {[...Array(4)].map((_, index) => (
-                <span key={index} className="text-orange-400 text-xl">★</span> // Golden stars
+                <span key={index} className="text-[#FF9F0D] text-xl">★</span> // Golden stars
               ))}
               <span className="text-gray-400 text-xl">★</span> {/* Gray star for missing rating */}
             </div>
@@ -66,7 +66,7 @@ const Testimonials: React.FC = () => {
             <span
               key={index}
               className={`w-3 h-3 rounded-full ${
-                index === 0 ? "bg-orange-400" : "bg-gray-400"
+                index === 0 ? "bg-[#FF9F0D]" : "bg-gray-400"
               }`}
             ></span>
           ))}

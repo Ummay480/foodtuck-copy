@@ -47,7 +47,8 @@ const ProductDetails: React.FC = () => {
       {/* Right: Product Info */}
       <div className="lg:w-1/2 flex flex-col gap-6">
         <div className="flex items-center justify-between">
-          <span className="bg-orange-500 text-black px-4 py-1 rounded-full text-sm">
+          <span className="bg-[#FF9F0D]
+ text-black px-4 py-1 text-sm">
             In stock
           </span>
           <div className="flex gap-2">
@@ -66,7 +67,7 @@ const ProductDetails: React.FC = () => {
 
         <div className="flex items-center gap-4">
           <span className="text-2xl font-bold">$54.00</span>
-          <div className="flex items-center text-orange-400">
+          <div className="flex items-center text-[#FF9F0D]">
             <AiFillStar />
             <AiFillStar />
             <AiFillStar />
@@ -94,7 +95,8 @@ const ProductDetails: React.FC = () => {
               +
             </button>
           </div>
-          <button className="flex items-center gap-2 bg-orange-500 text-black px-4 py-2 rounded-full hover:bg-orange-600">
+          <button className="flex items-center gap-2 bg-[#FF9F0D]
+ text-white px-4 py-2 hover:bg-orange-600">
             <BsCartPlus />
             Add to cart
           </button>

@@ -3,7 +3,7 @@ import NavBar from '@/components/NavBar';
 import HeroBanner from '@/components/HeroBanner';
 import ProductDetails from '@/components/ProductDetails';
 import SimilarProducts from '@/components/SimilarProducts';
-import SupportSection from '@/components/SupportSection';
+
 
 
 const Shop = () => (
@@ -20,7 +20,7 @@ const Shop = () => (
       <ProductDetails />
       </div>
        <SimilarProducts />
-      <SupportSection />
+  
     </main>
  
   </>

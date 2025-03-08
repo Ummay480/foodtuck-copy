@@ -5,9 +5,9 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-black text-white">
       {/* Top Section */}
-      <div className="flex justify-between items-center py-6 px-4 border-b border-gray-700">
+      <div className="flex justify-between items-center py-6 px-4 border-b border-gray-700 max-w-screen-xl mx-auto">
         <h2 className="text-2xl font-semibold">
-          <span className="text-orange-500">Still</span> You Need Our Support ?
+          <span className="text-orange-400">Still</span> You Need Our Support ?
         </h2>
         <div className="flex space-x-2">
           <input
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 py-8 px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 py-8 px-4 max-w-screen-xl mx-auto">
         {/* About Us */}
         <div>
           <h3 className="text-lg font-semibold mb-2">About Us.</h3>
@@ -86,8 +86,8 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Social Media Links */}
-      <div className="flex justify-between items-center py-4 px-10 bg-orange-400 border-t border-gray-700">
-        <p className="text-xs text-white">&copy; 2024 by Ummay Kulsoom. All Rights Reserved.</p>
+      <div className="flex justify-between items-center py-4 px-10 bg-[#4F4F4F] border-t border-gray-700 max-w-screen-xl mx-auto">
+        <p className="text-xs px-20 text-white">&copy; 2024 by Ummay Kulsoom. All Rights Reserved.</p>
         <div className="flex space-x-4">
           <FaFacebook className="text-white hover:text-orange-500 cursor-pointer" />
           <FaTwitter className="text-white hover:text-orange-500 cursor-pointer" />

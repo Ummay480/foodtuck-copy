@@ -1,4 +1,8 @@
+"use client"
+import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+
 
 const Menu = () => {
   const menuDetails = [
@@ -56,20 +60,25 @@ const Menu = () => {
     <section className="bg-black text-white py-8">
       <div className="container mx-auto text-center mb-10 mt-8">
         {/* Header */}
-        <h3 className="text-orange-400 font-greatVibes text-2xl mt-6 ">Choose & pick</h3>
-        <h2 className="text-3xl font-bold  text-orange-400 py4">
+        <h3 className="text-[#FF9F0D] font-greatVibes text-2xl mt-6 ">Choose & pick</h3>
+        <h2 className="text-3xl font-bold  text-[#FF9F0D] py4">
             Fr <span className="text-white mb-10 -ml-2">om Our Menu</span> 
           </h2>
 
         {/* Menu Categories */}
         <div className="flex justify-center space-x-20 my-8 text-gray-400">
-          <button className="hover:text-orange-400">Breakfast</button>
-          <button className="hover:text-orange-400">Lunch</button>
-          <button className="hover:text-orange-400">Dinner</button>
-          <button className="hover:text-orange-400">Dessert</button>
-          <button className="hover:text-orange-400">Drink</button>
-          <button className="hover:text-orange-400">Snack</button>
-          <button className="hover:text-orange-400">Soups</button>
+        <div>
+              {/* Using Next.js Link component directly with a button */}
+              <Link href="/lunch">
+                <button className="hover:text-[#FF9F0D]">Lunch</button>
+              </Link>
+            </div>
+
+          <button className="hover:text-[#FF9F0D]">Dinner</button>
+          <button className="hover:text-[#FF9F0D]">Dessert</button>
+          <button className="hover:text-[#FF9F0D]">Drink</button>
+          <button className="hover:text-[#FF9F0D]">Snack</button>
+          <button className="hover:text-[#FF9F0D]">Soups</button>
         </div>
 
         {/* Grid Layout */}
@@ -105,7 +114,7 @@ const Menu = () => {
                   <div>
                     <h3 className="text-md font-bold text-start">{item.name}</h3>
                     <p className="text-gray-400 text-sm">{item.description}</p>
-                    <p className="text-orange-400 font-semibold text-start">{item.price}</p>
+                    <p className="text-[#FF9F0D] font-semibold text-start">{item.price}</p>
                   </div>
                 </div>
               ))}

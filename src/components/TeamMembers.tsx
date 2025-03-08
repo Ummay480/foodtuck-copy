@@ -1,13 +1,16 @@
+import React from "react";
+import Image from "next/image";
+
 const TeamMembers = () => {
     const members = [
-      { name: 'Mark Henry', role: 'Owner' },
-      { name: 'Lucky Helen', role: 'Chef' },
-      { name: 'Moon Henry', role: 'Founder' },
-      { name: 'Tom Morrow', role: 'Specialist' },
-    ];
+      { name: 'Mark Henry', role: 'Owner', image: '/image-21.png' },
+    { name: 'Lucky Helen', role: 'Chef', image: '/images/image-22.png' },
+    { name: 'Moon Henry', role: 'Founder', image: '/images/image-23.png' },
+    { name: 'Tom Morrow', role: 'Specialist', image: '/images/image-24.png' },
+  ];
   
     return (
-      <section className="py-12 px-6">
+      <section className="py-12 px-4">
         <h2 className="text-3xl font-bold text-center mb-8">Team Members</h2>
         <div className="grid md:grid-cols-4 gap-6">
           {members.map((member, index) => (
